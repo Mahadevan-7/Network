@@ -1,0 +1,33 @@
+# Network Anomaly Detection Project Dependencies
+# Core data science and machine learning libraries
+pandas
+numpy
+scikit-learn
+xgboost
+tensorflow
+keras
+fastapi
+uvicorn
+imbalanced-learn
+shap
+matplotlib
+seaborn
+joblib
+
+# Additional useful packages for data analysis and visualization
+jupyter
+ipykernel
+plotly
+scipy
+statsmodels
+
+# Development and testing tools
+pytest
+black
+flake8
+mypy
+
+# Optional: For advanced ML features
+lightgbm
+catboost
+optuna
