@@ -52,8 +52,9 @@ const HeroSection = () => {
             className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
             An advanced cybersecurity solution that leverages cutting-edge ML and DL algorithms 
-            to detect malicious network traffic patterns in real-time. Built with Python, FastAPI, 
-            and modern web technologies.
+            to detect malicious network traffic patterns in real-time.
+             {/* Built with Python, FastAPI, 
+            and modern web technologies. */}
           </motion.p>
 
           {/* Feature Icons */}
@@ -87,7 +88,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <a
-              href="https://github.com/yourusername/network-anomaly-detection"
+              href="https://github.com/Mahadevan-7/Network"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-primary-600 hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"

@@ -17,7 +17,7 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'Methodology', href: '#methodology' },
     { name: 'Results', href: '#results' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Project Links', href: '#contact' }
   ];
 
   const scrollToSection = (href) => {

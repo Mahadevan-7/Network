@@ -7,7 +7,7 @@ import {
   Globe,
   Code,
   Layers,
-  Box,     // ✅ used instead of 'Container'
+  Box,
 } from "lucide-react";
 
 const TechStack = () => {
@@ -70,7 +70,7 @@ const TechStack = () => {
     },
     {
       category: "Containerization",
-      icon: <Box className="w-8 h-8" />, // ✅ Replaced 'Container' with 'Box'
+      icon: <Box className="w-8 h-8" />,
       color: "from-indigo-500 to-indigo-600",
       items: [
         { name: "Docker", description: "Containerization platform" },
