@@ -4,11 +4,11 @@ import { Play, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 
 const TryModel = () => {
   const [formData, setFormData] = useState({
-    feature1: '',
-    feature2: '',
-    feature3: '',
-    feature4: '',
-    feature5: ''
+    flowDuration: '',
+    packetCount: '',
+    byteCount: '',
+    protocolType: '',
+    portNumber: ''
   });
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
@@ -31,11 +31,11 @@ const TryModel = () => {
     try {
       // Convert form data to numeric array
       const features = [
-        parseFloat(formData.feature1) || 0,
-        parseFloat(formData.feature2) || 0,
-        parseFloat(formData.feature3) || 0,
-        parseFloat(formData.feature4) || 0,
-        parseFloat(formData.feature5) || 0
+        parseFloat(formData.flowDuration) || 0,
+        parseFloat(formData.packetCount) || 0,
+        parseFloat(formData.byteCount) || 0,
+        parseFloat(formData.protocolType) || 0,
+        parseFloat(formData.portNumber) || 0
       ];
 
       // API endpoint (configurable). Set VITE_API_URL in web/.env when running locally
@@ -127,85 +127,85 @@ const TryModel = () => {
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="feature1" className="block text-sm font-medium text-gray-700 mb-2">
-                    Feature 1 (Flow Duration)
+                  <label htmlFor="flowDuration" className="block text-sm font-medium text-gray-700 mb-2">
+                    Flow Duration (ms)
                   </label>
                   <input
                     type="number"
-                    id="feature1"
-                    name="feature1"
+                    id="flowDuration"
+                    name="flowDuration"
                     step="0.1"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                     placeholder="e.g., 100.5"
-                    value={formData.feature1}
+                    value={formData.flowDuration}
                     onChange={handleInputChange}
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="feature2" className="block text-sm font-medium text-gray-700 mb-2">
-                    Feature 2 (Packet Count)
+                  <label htmlFor="packetCount" className="block text-sm font-medium text-gray-700 mb-2">
+                    Packet Count
                   </label>
                   <input
                     type="number"
-                    id="feature2"
-                    name="feature2"
+                    id="packetCount"
+                    name="packetCount"
                     step="0.1"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                     placeholder="e.g., 50.0"
-                    value={formData.feature2}
+                    value={formData.packetCount}
                     onChange={handleInputChange}
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="feature3" className="block text-sm font-medium text-gray-700 mb-2">
-                    Feature 3 (Byte Count)
+                  <label htmlFor="byteCount" className="block text-sm font-medium text-gray-700 mb-2">
+                    Byte Count
                   </label>
                   <input
                     type="number"
-                    id="feature3"
-                    name="feature3"
+                    id="byteCount"
+                    name="byteCount"
                     step="0.1"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                     placeholder="e.g., 1024.0"
-                    value={formData.feature3}
+                    value={formData.byteCount}
                     onChange={handleInputChange}
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="feature4" className="block text-sm font-medium text-gray-700 mb-2">
-                    Feature 4 (Protocol Type)
+                  <label htmlFor="protocolType" className="block text-sm font-medium text-gray-700 mb-2">
+                    Protocol Type (1=ICMP, 6=TCP, 17=UDP)
                   </label>
                   <input
                     type="number"
-                    id="feature4"
-                    name="feature4"
+                    id="protocolType"
+                    name="protocolType"
                     step="0.1"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="e.g., 1.0"
-                    value={formData.feature4}
+                    placeholder="e.g., 6.0"
+                    value={formData.protocolType}
                     onChange={handleInputChange}
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="feature5" className="block text-sm font-medium text-gray-700 mb-2">
-                    Feature 5 (Port Number)
+                  <label htmlFor="portNumber" className="block text-sm font-medium text-gray-700 mb-2">
+                    Port Number
                   </label>
                   <input
                     type="number"
-                    id="feature5"
-                    name="feature5"
+                    id="portNumber"
+                    name="portNumber"
                     step="0.1"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                     placeholder="e.g., 80.0"
-                    value={formData.feature5}
+                    value={formData.portNumber}
                     onChange={handleInputChange}
                     required
                   />

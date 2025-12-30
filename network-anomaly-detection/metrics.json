@@ -1,0 +1,132 @@
+{
+  "rocCurves": [
+    {
+      "fpr": 0.0,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.0
+    },
+    {
+      "fpr": 0.1,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.1
+    },
+    {
+      "fpr": 0.2,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.2
+    },
+    {
+      "fpr": 0.30000000000000004,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.30000000000000004
+    },
+    {
+      "fpr": 0.4,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.4
+    },
+    {
+      "fpr": 0.5,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.5
+    },
+    {
+      "fpr": 0.6000000000000001,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.6000000000000001
+    },
+    {
+      "fpr": 0.7000000000000001,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.7000000000000001
+    },
+    {
+      "fpr": 0.8,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.8
+    },
+    {
+      "fpr": 0.9,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 0.9
+    },
+    {
+      "fpr": 1.0,
+      "randomForest": 1.0,
+      "xgboost": 1.0,
+      "baseline": 1.0
+    }
+  ],
+  "confusionMatrix": {
+    "trueNormal": 16,
+    "falsePositive": 0,
+    "falseNegative": 0,
+    "trueAnomaly": 4
+  },
+  "featureImportance": [
+    {
+      "feature": "fwd_packets",
+      "importance": 0.2476843148469925
+    },
+    {
+      "feature": "fwd_bytes",
+      "importance": 0.22992242872714996
+    },
+    {
+      "feature": "flow_iat_std",
+      "importance": 0.11402654647827148
+    },
+    {
+      "feature": "flow_duration",
+      "importance": 0.11280050128698349
+    },
+    {
+      "feature": "flow_bytes_per_sec",
+      "importance": 0.1032402366399765
+    },
+    {
+      "feature": "flow_packets_per_sec",
+      "importance": 0.08527001738548279
+    },
+    {
+      "feature": "src_port",
+      "importance": 0.030351746827363968
+    }
+  ],
+  "modelMetrics": {
+    "randomForest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "rocAuc": 1.0
+    },
+    "xgboost": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "rocAuc": 1.0
+    }
+  },
+  "bestModel": {
+    "name": "xgboost",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "rocAuc": 1.0
+    }
+  }
+}
